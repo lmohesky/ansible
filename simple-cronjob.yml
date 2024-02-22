@@ -1,0 +1,15 @@
+---
+- name: Create a scheduled cron job
+  hosts: all
+
+  tasks:
+    - name: Schedule cron:
+      cron:
+	   name: This job is scheduled to run at 10:00 AM every Thursday
+	   minute: “0”
+	   hour: “10”
+	   day: “*”
+	   month: “*”
+	   weekday: “4“
+	   user: root
+	   job: “/path/to/bashscript.sh”

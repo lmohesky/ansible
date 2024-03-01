@@ -1,4 +1,7 @@
-- hosts:
-    - all
+---
+- name: “Ping localhost”
+  hosts: localhost
+
   tasks:
-    - action: ping
+  - name: “Testing connectivity”
+    ping:

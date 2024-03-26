@@ -1,6 +1,6 @@
 ---
 - name: Fill motd file with host data
-  hosts: all
+  hosts: 192.168.10.23
   become: true
   tasks:
     - name: Motd Template

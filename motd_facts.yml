@@ -5,7 +5,7 @@
   tasks:
     - name: Motd Template
       ansible.builtin.template:
-        src: motd_facts.j2
+        src: templates/motd_facts.j2
         dest: /etc/motd
         owner: root
         group: root

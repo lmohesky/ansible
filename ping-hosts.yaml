@@ -1,6 +1,6 @@
 ---
 - name: “Ping localhost”
-  hosts: Servers
+  hosts: localhost
 
   tasks:
   - name: “Testing connectivity”
